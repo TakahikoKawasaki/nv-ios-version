@@ -17,6 +17,7 @@
 		A929F40C170BF9EF0027A138 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A929F40A170BF9EF0027A138 /* InfoPlist.strings */; };
 		A929F40F170BF9EF0027A138 /* nv_ios_versionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A929F40E170BF9EF0027A138 /* nv_ios_versionTests.m */; };
 		A929F41A170BFA930027A138 /* Version.m in Sources */ = {isa = PBXBuildFile; fileRef = A929F419170BFA930027A138 /* Version.m */; };
+		A951F230170CB2AD0082CF8C /* System.m in Sources */ = {isa = PBXBuildFile; fileRef = A951F22F170CB2AD0082CF8C /* System.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		A929F40E170BF9EF0027A138 /* nv_ios_versionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nv_ios_versionTests.m; sourceTree = "<group>"; };
 		A929F418170BFA930027A138 /* Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Version.h; sourceTree = "<group>"; };
 		A929F419170BFA930027A138 /* Version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Version.m; sourceTree = "<group>"; };
+		A951F22E170CB2AD0082CF8C /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System.h; sourceTree = "<group>"; };
+		A951F22F170CB2AD0082CF8C /* System.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = System.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				A929F3F5170BF9EF0027A138 /* nv_ios_version.h */,
 				A929F3F7170BF9EF0027A138 /* nv_ios_version.m */,
 				A929F3F3170BF9EF0027A138 /* Supporting Files */,
+				A951F22E170CB2AD0082CF8C /* System.h */,
+				A951F22F170CB2AD0082CF8C /* System.m */,
 			);
 			path = "nv-ios-version";
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			files = (
 				A929F3F8170BF9EF0027A138 /* nv_ios_version.m in Sources */,
 				A929F41A170BFA930027A138 /* Version.m in Sources */,
+				A951F230170CB2AD0082CF8C /* System.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +415,7 @@
 				A929F414170BF9EF0027A138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A929F415170BF9EF0027A138 /* Build configuration list for PBXNativeTarget "nv-ios-versionTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +424,7 @@
 				A929F417170BF9EF0027A138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

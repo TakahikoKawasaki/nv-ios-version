@@ -19,38 +19,43 @@
 // Headers
 //----------------------------------------------------------------------
 #import <UIKit/UIDevice.h>
-#import "nv_ios_versionTests.h"
-#import "Version.h"
 #import "System.h"
+
+
+//----------------------------------------------------------------------
+// Static Variables
+//----------------------------------------------------------------------
+static Version *_version;
 
 
 //----------------------------------------------------------------------
 // Implementation
 //----------------------------------------------------------------------
-@implementation nv_ios_versionTests
+@implementation System
 
 
-- (void)setUp
+/**
+ * Initialization for this class.
+ */
++ (void)initialize
 {
-    [super setUp];
-    
-    // Set-up code here.
+    // Get the system version of iOS at runtime.
+    NSString *versionString = [[UIDevice currentDevice] systemVersion];
+
+    // Convert the version string to a Version instance.
+    Version *version = [Version versionWithString:versionString];
+
+    // Set as a class variable.
+    _version = version;
 }
 
 
-- (void)tearDown
+/**
+ * Get iOS version.
+ */
++ (Version *)version
 {
-    // Tear-down code here.
-    
-    [super tearDown];
-}
-
-
-- (void)testSystemVersion
-{
-    NSLog(@"version = %@", System.version);
-
-    STAssertTrue(YES, @"system version");
+    return _version;
 }
 
 

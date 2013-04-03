@@ -18,40 +18,20 @@
 //----------------------------------------------------------------------
 // Headers
 //----------------------------------------------------------------------
-#import <UIKit/UIDevice.h>
-#import "nv_ios_versionTests.h"
+#import <Foundation/Foundation.h>
 #import "Version.h"
-#import "System.h"
 
 
 //----------------------------------------------------------------------
-// Implementation
+// Interface
 //----------------------------------------------------------------------
-@implementation nv_ios_versionTests
+@interface System : NSObject
 
 
-- (void)setUp
-{
-    [super setUp];
-    
-    // Set-up code here.
-}
-
-
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
-}
-
-
-- (void)testSystemVersion
-{
-    NSLog(@"version = %@", System.version);
-
-    STAssertTrue(YES, @"system version");
-}
+/**
+ * Get iOS version.
+ */
++ (Version *)version;
 
 
 @end
