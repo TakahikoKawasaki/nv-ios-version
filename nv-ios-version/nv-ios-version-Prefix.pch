@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'nv-ios-version' target in the 'nv-ios-version' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
